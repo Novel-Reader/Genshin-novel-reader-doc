@@ -1,0 +1,1 @@
+# Genshin-novel-reader-doc

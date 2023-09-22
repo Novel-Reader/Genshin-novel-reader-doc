@@ -1,0 +1,101 @@
+site_name: Genshin novel reader documents(beta)
+site_author: Noella
+site_url: https://Novel-Reader.github.io
+repo_name: Novel-Reader
+repo_url: https://github.com/Novel-Reader/Novel-Reader.github.io
+copyright: Copyright &copy; 
+
+docs_dir: ./docs
+
+theme:
+    name: material
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - bash
+        - javascript
+        - python
+    palette:
+        primary: "pink"
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
+
+# minify: https://github.com/byrnereese/mkdocs-minify-plugin
+# use this plugin will increase build time and decrease browser render time
+plugins:
+    - search # necessary for search to work
+    - minify:
+        minify_html: false
+        minify_js: true
+        minify_css: true
+        htmlmin_opts:
+            remove_comments: true
+
+extra:
+  search:
+    language: 'jp'
+
+# Page tree
+nav:
+    - 'Readme': 'index.md'
+    - latest:
+        - '00-introduction': 'latest/00-introduction.md'
+        - '1-feature.md': 'latest/1-feature.md'
+        - '2.0-env.md': 'latest/2.0-env.md'
+        - '2.1-frontend.md': 'latest/2.1-frontend.md'
+        - '2.2-backend.md': 'latest/2.2-backend.md'
+        - '2.3-db.md': 'latest/2.3-db.md'
+        - '2.4-test.md': 'latest/2.4-test.md'
+        - '2.5-structure.md': 'latest/2.5-structure.md'
+        - '3.1-issues.md': 'latest/3.1-issues.md'
+        - '3.2-change.md': 'latest/3.2-change.md'
+        - '3.3-api.md': 'latest/3.3-api.md'
+        - '09-docs.md': 'latest/09-docs.md'
+    - v1:
+        - '00-introduction': 'v1/00-introduction.md'
+        - '1-feature.md': 'v1/1-future.md'
+        - '2.0-env.md': 'v1/2.0-env.md'
+        - '2.1-frontend.md': 'v1/2.1-frontend.md'
+        - '2.2-backend.md': 'v1/2.2-backend.md'
+        - '2.3-db.md': 'v1/2.3-db.md'
+        - '2.4-test.md': 'v1/2.4-test.md'
+        - '2.5-structure.md': 'v1/2.5-structure.md'
+        - '3.1-issues.md': 'v1/3.1-issues.md'
+        - '3.2-change.md': 'v1/3.2-change.md'
+        - '3.3-api.md': 'v1/3.3-api.md'
+        - '09-docs.md': 'v1/09-docs.md'
+
+    # ├── 模板
+    # │   ├── 模板-产品文档.md
+    # │   ├── 模板-实现文档.md
+    # │   ├── 模板-技术文档.md
+    # │   └── 不同文档的区别.md
+    # └── 实现文档
+    #     ├── 阅读器模式.md
+    #     ├── 文章数据结构.md
+    #     ├── 浏览器本地存储.md
+    #     └── 页面样式数据结构.md

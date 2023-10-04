@@ -1,3 +1,4 @@
+// rename screenshot image for website
 const fs = require('fs')
 
 const getNewName =  (fileName, splitChar) => {

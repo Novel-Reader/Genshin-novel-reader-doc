@@ -3,7 +3,7 @@ site_author: Noella
 site_url: https://Novel-Reader.github.io
 repo_name: Novel-Reader
 repo_url: https://github.com/Novel-Reader/Novel-Reader.github.io
-copyright: Copyright &copy; 
+copyright: Copyright &copy; Noella
 
 docs_dir: ./docs
 
@@ -44,12 +44,13 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.tilde
 
-# minify: https://github.com/byrnereese/mkdocs-minify-plugin
-# use this plugin will increase build time and decrease browser render time
 plugins:
-    - search # necessary for search to work
+    # necessary for search to work
+    - search
+    # minify: https://github.com/byrnereese/mkdocs-minify-plugin
+    # use this plugin will increase build time and decrease browser render time
     - minify:
-        minify_html: false
+        minify_html: true
         minify_js: true
         minify_css: true
         htmlmin_opts:
@@ -59,12 +60,11 @@ extra:
   search:
     language: 'jp'
 
-# Page tree
 nav:
     - 'Readme': 'index.md'
     - latest:
         - '00-introduction': 'latest/00-introduction.md'
-        - '1-feature.md': 'latest/1-feature.md'
+        - '1.0-feature.md': 'latest/1.0-feature.md'
         - '2.0-env.md': 'latest/2.0-env.md'
         - '2.1-frontend.md': 'latest/2.1-frontend.md'
         - '2.2-backend.md': 'latest/2.2-backend.md'
@@ -74,10 +74,10 @@ nav:
         - '3.1-issues.md': 'latest/3.1-issues.md'
         - '3.2-change.md': 'latest/3.2-change.md'
         - '3.3-api.md': 'latest/3.3-api.md'
-        - '09-docs.md': 'latest/09-docs.md'
+        - '全部文档': 'latest/9.0-docs.md'
     - v1:
         - '00-introduction': 'v1/00-introduction.md'
-        - '1-feature.md': 'v1/1-future.md'
+        - '1.0-feature.md': 'v1/1.0-future.md'
         - '2.0-env.md': 'v1/2.0-env.md'
         - '2.1-frontend.md': 'v1/2.1-frontend.md'
         - '2.2-backend.md': 'v1/2.2-backend.md'
@@ -87,15 +87,14 @@ nav:
         - '3.1-issues.md': 'v1/3.1-issues.md'
         - '3.2-change.md': 'v1/3.2-change.md'
         - '3.3-api.md': 'v1/3.3-api.md'
-        - '09-docs.md': 'v1/09-docs.md'
-
-    # ├── 模板
-    # │   ├── 模板-产品文档.md
-    # │   ├── 模板-实现文档.md
-    # │   ├── 模板-技术文档.md
-    # │   └── 不同文档的区别.md
-    # └── 实现文档
-    #     ├── 阅读器模式.md
-    #     ├── 文章数据结构.md
-    #     ├── 浏览器本地存储.md
-    #     └── 页面样式数据结构.md
+        - '全部文档': 'v1/9.0-docs.md'
+    - 模板:
+        - 'different': 'template/different.md'
+        - 'implementation': 'template/implementation.md'
+        - 'produce': 'template/produce.md'
+        - 'technology': 'template/technology.md'
+    - 实现文档:
+        - 'article-data-structure': 'implementation/article-data-structure.md'
+        - 'browser-local-storage': 'implementation/browser-local-storage.md'
+        - 'page-style-data-type': 'implementation/page-style-data-type.md'
+        - 'reader-mode': 'implementation/reader-mode.md'

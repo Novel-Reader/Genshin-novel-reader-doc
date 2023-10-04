@@ -43,8 +43,6 @@ export { getLocalValue, setLocalValue };
 | FOLDER_TREE_SAVE_KEY        | 用户设置的目录结构       | todo                             |
 
 
-
-
 ### 接口设计与实现
 
 系统存储模块，对外暴露两个存储函数 getLocalValue, setLocalValue，以及存储字段 keys。

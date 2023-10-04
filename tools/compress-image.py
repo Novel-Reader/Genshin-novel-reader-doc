@@ -1,13 +1,11 @@
-'''
-pip install numpy
-pip install opencv-python
-'''
+# compress screenshot for site
 from io import BytesIO
 import cv2
 import numpy as np
 
 
 def pic_compress(pic_path, out_path, target_size=199, quality=90, step=5, pic_type='.png'):
+
     with open(pic_path, 'rb') as f:
         pic_byte = f.read()
 
@@ -16,6 +14,7 @@ def pic_compress(pic_path, out_path, target_size=199, quality=90, step=5, pic_ty
 
     current_size = len(pic_byte) / 1024
     print("old image size is ", current_size, ' kb')
+    
     while current_size > target_size:
         pic_byte = cv2.imencode(pic_type, img_cv, [int(cv2.IMWRITE_JPEG_QUALITY), quality])[1]
         if quality - step < 0:

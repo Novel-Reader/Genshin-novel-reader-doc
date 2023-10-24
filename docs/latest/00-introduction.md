@@ -34,23 +34,3 @@
 
 3.2 [更新日志](./3.2-change.md)
 
-
-## 致谢
-
-感谢 [阮一峰](https://www.ruanyifeng.com/) 老师提供的教程 [JS语言基础](https://github.com/Michael18811380328/HelloBlog/tree/main/book/docs/ebook-JS-basic) ，[JS语言ES6](https://github.com/Michael18811380328/HelloBlog/tree/main/book/docs/ebook-JSES6-RYF)
-
-感谢 [Seatable](https://www.seatable.cn/) 提供的项目管理工具
-
-感谢[网易云课堂](https://github.com/Michael18811380328/HelloBlog/tree/master/book/docs/ebook-netease-senior-frontend)提供的前端+后端学习视频
-
-感谢[湖南科技大学](https://github.com/Michael18811380328/HelloBlog/tree/master/book/docs/ebook-network-basic)提供的计算机网络学习视频
-
-感谢[阿里云课堂](https://github.com/Michael18811380328/HelloBlog/tree/master/backend/docs/backend-sql)提供的MYSQL学习视频
-
-感谢黑马程序员、[开课吧](https://github.com/Michael18811380328/HelloBlog/tree/master/book/docs/ebook-kaikeba-frontend)、尚硅谷等机构提供的项目教学视频
-
-感谢 [stackoverflow](https://stackoverflow.com/users/14245047/michael-an) 提供的外文检索平台
-
-感谢 [CSDN](https://blog.csdn.net/weixin_41697143) 掘金等提供的中文检索博客平台
-
-感谢 [github](https://github.com/Michael18811380328/) 提供的代码管理平台

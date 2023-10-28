@@ -61,7 +61,7 @@ extra:
     language: 'jp'
 
 nav:
-    - 'Readme': 'index.md'
+    - Readme: 'index.md'
     - latest:
         - '00-introduction': 'latest/00-introduction.md'
         - '1.0-feature.md': 'latest/1.0-feature.md'
@@ -71,9 +71,10 @@ nav:
         - '2.3-db.md': 'latest/2.3-db.md'
         - '2.4-test.md': 'latest/2.4-test.md'
         - '2.5-structure.md': 'latest/2.5-structure.md'
-        - '3.1-issues.md': 'latest/3.1-issues.md'
+        - '3.1-api.md': 'latest/3.1-api.md'
         - '3.2-change.md': 'latest/3.2-change.md'
-        - '3.3-api.md': 'latest/3.3-api.md'
+        - '3.3-future.md': 'latest/3.3-future.md'
+        - '4.0-conclusion.md': 'latest/4.0-conclusion.md'
         - '全部文档': 'latest/9.0-docs.md'
     - v1:
         - '00-introduction': 'v1/00-introduction.md'
@@ -97,4 +98,6 @@ nav:
         - 'article-data-structure': 'implementation/article-data-structure.md'
         - 'browser-local-storage': 'implementation/browser-local-storage.md'
         - 'page-style-data-type': 'implementation/page-style-data-type.md'
-        - 'reader-mode': 'implementation/reader-mode.md'
+        - 'user-permission': 'implementation/user-permission.md'
+        - '实现文档-中英文翻译': 'implementation/实现文档-中英文翻译.md'
+        - '实现文档-背景水印': 'implementation/实现文档-背景水印.md'

@@ -1,6 +1,6 @@
 # 文档
 
-这是简化版文档，完整文档详见 9.0-docs.md 
+这是简化版文档，完整文档详见 9.0-docs.md
 
 ## 前言
 
@@ -10,7 +10,7 @@
 
 我个人喜欢阅读小说，并且希望有丰富的背景和自定义样式，所以尝试自己实现了一个简单的小说阅读器，支持丰富的原神背景主题，支持用户高度定制阅读界面，同时有简单的服务器搜索，用户管理等基本功能，以搭配前端阅读器使用，同时也熟悉巩固各种技术等。
 
-正好 2023 年春节期间有时间，差不多前后用来2个月时间，完成了这个小项目的 1.0 版本。
+正好 2023 年春节期间有时间，差不多前后用来 2 个月时间，完成了这个小项目的 1.0 版本。
 
 ## 第一章 [软件功能](./1.0-future.md)
 
@@ -38,7 +38,7 @@
 
 ## 致谢
 
-感谢 [阮一峰](https://www.ruanyifeng.com/) 老师提供的教程 [JS语言基础](https://github.com/Michael18811380328/HelloBlog/tree/main/book/docs/ebook-JS-basic) ，[JS语言ES6](https://github.com/Michael18811380328/HelloBlog/tree/main/book/docs/ebook-JSES6-RYF)
+感谢 [阮一峰](https://www.ruanyifeng.com/) 老师提供的教程 [JS 语言基础](https://github.com/Michael18811380328/HelloBlog/tree/main/book/docs/ebook-JS-basic) ，[JS 语言 ES6](https://github.com/Michael18811380328/HelloBlog/tree/main/book/docs/ebook-JSES6-RYF)
 
 感谢 [Seatable](https://www.seatable.cn/) 提供的项目管理工具
 
@@ -46,7 +46,7 @@
 
 感谢[湖南科技大学](https://github.com/Michael18811380328/HelloBlog/tree/master/book/docs/ebook-network-basic)提供的计算机网络学习视频
 
-感谢[阿里云课堂](https://github.com/Michael18811380328/HelloBlog/tree/master/backend/docs/backend-sql)提供的MYSQL学习视频
+感谢[阿里云课堂](https://github.com/Michael18811380328/HelloBlog/tree/master/backend/docs/backend-sql)提供的 MYSQL 学习视频
 
 感谢黑马程序员、[开课吧](https://github.com/Michael18811380328/HelloBlog/tree/master/book/docs/ebook-kaikeba-frontend)、尚硅谷等机构提供的项目教学视频
 

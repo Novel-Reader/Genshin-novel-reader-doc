@@ -14,25 +14,25 @@
 
 增加存储模块，包括获取和设置存储的函数，存储字段的 keys，代码如下
 
-~~~js
+```js
 // src/utils/store.js
 import localforage from "localforage";
 
 // 注意 异步函数获取本地存储
 async function getLocalValue(key) {
   return await localforage.getItem(key);
-};
+}
 
 function setLocalValue(key, value) {
   localforage.setItem(key, value);
-};
+}
 
 export const NOVEL_READER_STYLE_SAVE_KEY = "novel-reader-style";
 export const LOCAL_NOVELS_SAVE_KEY = "local-novels";
-export const FOLDER_TREE_SAVE_KEY = 'folder-tree';
+export const FOLDER_TREE_SAVE_KEY = "folder-tree";
 
 export { getLocalValue, setLocalValue };
-~~~
+```
 
 其中不同存储字段的 key 和对应的 value 含义如下
 
@@ -42,20 +42,23 @@ export { getLocalValue, setLocalValue };
 | LOCAL_NOVELS_SAVE_KEY       | 离线模式下小说的存储     | todo                             |
 | FOLDER_TREE_SAVE_KEY        | 用户设置的目录结构       | todo                             |
 
-
 ### 接口设计与实现
 
 系统存储模块，对外暴露两个存储函数 getLocalValue, setLocalValue，以及存储字段 keys。
 
 系统功能界面，调用存储函数设置或获取本地存储。
 
-~~~js
+```js
 // App.js
-import { getLocalValue, setLocalValue, NOVEL_READER_STYLE_SAVE_KEY } from './utils/store';
+import {
+  getLocalValue,
+  setLocalValue,
+  NOVEL_READER_STYLE_SAVE_KEY,
+} from "./utils/store";
 
 // 1、界面初始化，从本地存储获取配置；如果没有配置，使用默认配置；
 initDataFromLocalStore = () => {
-  getLocalValue(NOVEL_READER_STYLE_SAVE_KEY).then(localStyleStr => {
+  getLocalValue(NOVEL_READER_STYLE_SAVE_KEY).then((localStyleStr) => {
     if (localStyleStr) {
       this.setState({
         style: JSON.parse(localStyleStr) || DEFAULT_STYLE,
@@ -66,7 +69,7 @@ initDataFromLocalStore = () => {
 
 // 2、用户实现增删后，保存样式到本地存储
 setLocalValue(NOVEL_READER_STYLE_SAVE_KEY, JSON.stringify(style));
-~~~
+```
 
 ### 单元测试
 

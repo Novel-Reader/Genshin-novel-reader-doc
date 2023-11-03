@@ -8,15 +8,15 @@ copyright: Copyright &copy; Noella
 docs_dir: ./docs
 
 theme:
-    name: material
-    highlightjs: true
-    hljs_languages:
-        - yaml
-        - bash
-        - javascript
-        - python
-    palette:
-        primary: "pink"
+  name: material
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - bash
+    - javascript
+    - python
+  palette:
+    primary: "pink"
 
 markdown_extensions:
   - admonition
@@ -45,59 +45,59 @@ markdown_extensions:
   - pymdownx.tilde
 
 plugins:
-    # necessary for search to work
-    - search
-    # minify: https://github.com/byrnereese/mkdocs-minify-plugin
-    # use this plugin will increase build time and decrease browser render time
-    - minify:
-        minify_html: true
-        minify_js: true
-        minify_css: true
-        htmlmin_opts:
-            remove_comments: true
+  # necessary for search to work
+  - search
+  # minify: https://github.com/byrnereese/mkdocs-minify-plugin
+  # use this plugin will increase build time and decrease browser render time
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
 
 extra:
   search:
-    language: 'jp'
+    language: "jp"
 
 nav:
-    - Readme: 'index.md'
-    - latest:
-        - '00-introduction': 'latest/00-introduction.md'
-        - '1.0-feature.md': 'latest/1.0-feature.md'
-        - '2.0-env.md': 'latest/2.0-env.md'
-        - '2.1-frontend.md': 'latest/2.1-frontend.md'
-        - '2.2-backend.md': 'latest/2.2-backend.md'
-        - '2.3-db.md': 'latest/2.3-db.md'
-        - '2.4-test.md': 'latest/2.4-test.md'
-        - '2.5-structure.md': 'latest/2.5-structure.md'
-        - '3.1-api.md': 'latest/3.1-api.md'
-        - '3.2-change.md': 'latest/3.2-change.md'
-        - '3.3-future.md': 'latest/3.3-future.md'
-        - '4.0-conclusion.md': 'latest/4.0-conclusion.md'
-        - '全部文档': 'latest/9.0-docs.md'
-    - v1:
-        - '00-introduction': 'v1/00-introduction.md'
-        - '1.0-feature.md': 'v1/1.0-future.md'
-        - '2.0-env.md': 'v1/2.0-env.md'
-        - '2.1-frontend.md': 'v1/2.1-frontend.md'
-        - '2.2-backend.md': 'v1/2.2-backend.md'
-        - '2.3-db.md': 'v1/2.3-db.md'
-        - '2.4-test.md': 'v1/2.4-test.md'
-        - '2.5-structure.md': 'v1/2.5-structure.md'
-        - '3.1-issues.md': 'v1/3.1-issues.md'
-        - '3.2-change.md': 'v1/3.2-change.md'
-        - '3.3-api.md': 'v1/3.3-api.md'
-        - '全部文档': 'v1/9.0-docs.md'
-    - 模板:
-        - 'different': 'template/different.md'
-        - 'implementation': 'template/implementation.md'
-        - 'produce': 'template/produce.md'
-        - 'technology': 'template/technology.md'
-    - 实现文档:
-        - 'article-data-structure': 'implementation/article-data-structure.md'
-        - 'browser-local-storage': 'implementation/browser-local-storage.md'
-        - 'page-style-data-type': 'implementation/page-style-data-type.md'
-        - 'user-permission': 'implementation/user-permission.md'
-        - '实现文档-中英文翻译': 'implementation/实现文档-中英文翻译.md'
-        - '实现文档-背景水印': 'implementation/实现文档-背景水印.md'
+  - Readme: "index.md"
+  - latest:
+      - "00-introduction": "latest/00-introduction.md"
+      - "1.0-feature.md": "latest/1.0-feature.md"
+      - "2.0-env.md": "latest/2.0-env.md"
+      - "2.1-frontend.md": "latest/2.1-frontend.md"
+      - "2.2-backend.md": "latest/2.2-backend.md"
+      - "2.3-db.md": "latest/2.3-db.md"
+      - "2.4-test.md": "latest/2.4-test.md"
+      - "2.5-structure.md": "latest/2.5-structure.md"
+      - "3.1-api.md": "latest/3.1-api.md"
+      - "3.2-change.md": "latest/3.2-change.md"
+      - "3.3-future.md": "latest/3.3-future.md"
+      - "4.0-conclusion.md": "latest/4.0-conclusion.md"
+      - "全部文档": "latest/9.0-docs.md"
+  - v1:
+      - "00-introduction": "v1/00-introduction.md"
+      - "1.0-feature.md": "v1/1.0-future.md"
+      - "2.0-env.md": "v1/2.0-env.md"
+      - "2.1-frontend.md": "v1/2.1-frontend.md"
+      - "2.2-backend.md": "v1/2.2-backend.md"
+      - "2.3-db.md": "v1/2.3-db.md"
+      - "2.4-test.md": "v1/2.4-test.md"
+      - "2.5-structure.md": "v1/2.5-structure.md"
+      - "3.1-issues.md": "v1/3.1-issues.md"
+      - "3.2-change.md": "v1/3.2-change.md"
+      - "3.3-api.md": "v1/3.3-api.md"
+      - "全部文档": "v1/9.0-docs.md"
+  - 模板:
+      - "different": "template/different.md"
+      - "implementation": "template/implementation.md"
+      - "produce": "template/produce.md"
+      - "technology": "template/technology.md"
+  - 实现文档:
+      - "article-data-structure": "implementation/article-data-structure.md"
+      - "browser-local-storage": "implementation/browser-local-storage.md"
+      - "page-style-data-type": "implementation/page-style-data-type.md"
+      - "user-permission": "implementation/user-permission.md"
+      - "实现文档-中英文翻译": "implementation/实现文档-中英文翻译.md"
+      - "实现文档-背景水印": "implementation/实现文档-背景水印.md"

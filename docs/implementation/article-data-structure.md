@@ -22,18 +22,20 @@ const generatorDefaultData = () => {
   return {
     files: [
       {
-        id: '7hts',
-        name: 'text.md',
-        detail: 'this is test file.this is test file.this is test file.this is test file.',
-        brief: 'this is test file.',
-        author: 'Mike',
+        id: "7hts",
+        name: "text.md",
+        detail:
+          "this is test file.this is test file.this is test file.this is test file.",
+        brief: "this is test file.",
+        author: "Mike",
         size: 300,
-        tag: '历史 推断',
-        cover_photo: 'https://bookcover.yuewen.com/qdbimg/349573/1037135031/90.webp',
-        created_at: '',
+        tag: "历史 推断",
+        cover_photo:
+          "https://bookcover.yuewen.com/qdbimg/349573/1037135031/90.webp",
+        created_at: "",
         price: 100,
-      }
-    ]
+      },
+    ],
   };
 };
 ```
@@ -49,8 +51,6 @@ const generatorDefaultData = () => {
 - created_at：文章创建时间，自动生成
 - price：文章价格，可选
 
-
-
 ## 数据展示
 
 渲染文章时，根据不同类型的文章，渲染不同的阅读器
@@ -59,15 +59,13 @@ const generatorDefaultData = () => {
 - 代码格式的文档，默认按照代码解析器处理
 - txt 格式的文档，根据文档的长度，支持分章节，具体分章节部分，在渲染部分完成
 
-
-
 ## 历史版本管理（TODO）
 
 需求：实际软件开发中，由于功能更迭，某些数据对象确实需要增减参数，那么已有的历史数据也需要正常处理。
 
 前端可以使用版本管理方式，处理不同版本下的数据结构，后期可扩展性更高（符合实际需求），伪代码如下。
 
-~~~js
+```js
 // 规范化文章内容
 normalizeFile(file) {
   // 缺少文章或者缺少版本号，去掉这个数据
@@ -87,5 +85,4 @@ normalizeFile(file) {
   }
   return file;
 }
-~~~
-
+```

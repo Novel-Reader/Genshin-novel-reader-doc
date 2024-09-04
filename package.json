@@ -1,6 +1,6 @@
 {
   "name": "genshin-novel-reader-doc",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "This is Genshin novel reader document",
   "main": "index.js",
   "directories": {

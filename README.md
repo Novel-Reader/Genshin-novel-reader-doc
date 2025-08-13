@@ -2,7 +2,7 @@
 
 原神小说阅读器的每个组件在 Github 上有独立的源代码库
 
-- 小说阅读器（javascript版本）：https://github.com/Novel-Reader/Genshin-novel-reader
+- 小说阅读器（javascript 版本）：https://github.com/Novel-Reader/Genshin-novel-reader
 - 小说服务器：https://github.com/Novel-Reader/Genshin-novel-reader-express-server
 - 小说阅读器（typescript 版）：https://github.com/Novel-Reader/novel-reader-ts
 - 文档源代码：https://github.com/Novel-Reader/Genshin-novel-reader-doc

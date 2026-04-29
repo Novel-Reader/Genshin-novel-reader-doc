@@ -1,4 +1,4 @@
-# Genshin-novel-reader-doc
+# Seafile
 
 原神小说阅读器的每个组件在 Github 上有独立的源代码库
 
